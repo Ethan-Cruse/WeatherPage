@@ -27,7 +27,7 @@ app.post('/', function (req, res) {
             console.log(tempDis);
             console.log(temp);
             res.type("html")
-            res.write('<h1>The tempreture in ' + query + ' is ' + temp + " with " + tempDis + "</h1>");
+            res.write('<h1>The temperature in ' + query + ' is ' + temp + "celsius with " + tempDis + "</h1>");
             res.write('<img src=' + icon + '>'); 
             res.send();
         })
